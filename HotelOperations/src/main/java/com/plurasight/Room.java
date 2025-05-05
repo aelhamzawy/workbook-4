@@ -8,13 +8,15 @@ public class Room {
     private float price;
     private boolean isOccupied;
     private boolean isAvailable;
+    private int roomId;
 
     // Room Constructor To Re-assign The Values To The Room Variables
-    public Room(int numberOfBeds, boolean isAvailable, boolean isOccupied, float price) {
+    public Room(int numberOfBeds, boolean isAvailable, boolean isOccupied, float price, int roomId) {
         this.numberOfBeds = numberOfBeds;
         this.isAvailable = isAvailable;
         this.isOccupied = isOccupied;
         this.price = price;
+        this.roomId = roomId;
     }
 
     // Getter Methods For The Variables
@@ -29,7 +31,7 @@ public class Room {
         return isAvailable;
     }
 
-    // To Get THe Room Price
+    // To Get The Room Price
     public float getPrice() {
         return price;
     }
@@ -37,5 +39,10 @@ public class Room {
     // To Check If The Room Is Occupies Or Not
     public boolean isOccupied() {
         return isOccupied;
+    }
+
+    // Get Room id
+    public int roomId(int roomId){
+        return roomId;
     }
 }
